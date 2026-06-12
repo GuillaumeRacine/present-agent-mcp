@@ -35,7 +35,7 @@ Do not call or mention unavailable Present Agent tools such as `present_list_rec
 - Use `present_find_gift` for recommendations. Do not invent products.
 - Never fall back to `curl`, localhost APIs, SQLite, repository scripts, or direct product DB queries when the MCP tool is missing or disconnected.
 - If `present_find_gift` is unavailable, stop and tell the user to restart Claude Code or reconnect the MCP server:
-  `claude mcp remove present-agent -s user && claude mcp add present-agent --transport stdio --scope user -e PRESENT_AGENT_CLIENT=claude-code -- npx -y github:GuillaumeRacine/present-agent-v3-mar2026`
+  `claude mcp remove present-agent -s user && claude mcp add present-agent --transport stdio --scope user -e PRESENT_AGENT_CLIENT=claude-code -- npx -y present-agent-mcp`
 - Ask at most one short clarification before recommendations.
 - If every returned `matchScore` is `0.5`, say plainly that ranking fell back to generic mode and ask for a tighter refinement. Do not pretend the list is personalized.
 - Keep all recommendation links exactly as returned by Present Agent.

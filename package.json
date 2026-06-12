@@ -1,6 +1,6 @@
 {
   "name": "present-agent-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Public MCP server for Present Agent — find 5 explainable, personalized gift recommendations from any MCP client (Claude Code, Codex, and more). Hosted: no local catalog, Shopify, or model keys required.",
   "license": "MIT",
   "author": "Present Agent (presentagent.vip)",

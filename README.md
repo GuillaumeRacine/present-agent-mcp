@@ -20,7 +20,7 @@ Present Agent is a gifting engine that reasons about the **relationship, occasio
 ```bash
 claude mcp add present-agent --transport stdio --scope user \
   -e PRESENT_AGENT_CLIENT=claude-code \
-  -- npx -y github:GuillaumeRacine/present-agent-mcp
+  -- npx -y present-agent-mcp
 ```
 
 Then ask Claude, in any project:
@@ -32,7 +32,7 @@ Then ask Claude, in any project:
 One command writes the config to `~/.codex/config.toml`:
 
 ```bash
-npx -y github:GuillaumeRacine/present-agent-mcp setup codex
+npx -y present-agent-mcp setup codex
 ```
 
 Use `--dry-run` to preview without writing, or `--local-context` to enable opt-in local context (see [Local context mode](#local-context-mode-opt-in)). Restart Codex, then ask for a gift.
@@ -44,7 +44,7 @@ Use `--dry-run` to preview without writing, or `--local-context` to enable opt-i
   "mcpServers": {
     "present-agent": {
       "command": "npx",
-      "args": ["-y", "github:GuillaumeRacine/present-agent-mcp"],
+      "args": ["-y", "present-agent-mcp"],
       "env": { "PRESENT_AGENT_CLIENT": "custom" }
     }
   }
@@ -186,7 +186,7 @@ All environment variables are **optional** — the package runs with safe defaul
 | `failed to start` / command not found | Ensure Node.js ≥ 18 and that `npx` can reach the network on first run. |
 | Tool call times out | Recommendations can take up to ~60s; raise your client's MCP tool timeout. |
 | Empty / generic picks | Add a concrete interest + relationship + occasion; avoid vague input. |
-| Want to preview Codex config | `npx -y github:GuillaumeRacine/present-agent-mcp setup codex --dry-run` |
+| Want to preview Codex config | `npx -y present-agent-mcp setup codex --dry-run` |
 
 ---
 

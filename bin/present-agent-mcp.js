@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // Present Agent MCP — public hosted launcher.
-// `npx -y github:GuillaumeRacine/present-agent-mcp` boots the stdio MCP server,
+// `npx -y present-agent-mcp` boots the stdio MCP server,
 // which calls the hosted Present Agent API at https://presentagent.vip.
 // No local catalog DB, Shopify credentials, or model-provider keys required.
 
@@ -10,7 +10,7 @@ const fs = require("node:fs");
 const os = require("node:os");
 const path = require("node:path");
 
-const INSTALL_SPEC = process.env.PRESENT_AGENT_INSTALL_SPEC || "github:GuillaumeRacine/present-agent-mcp";
+const INSTALL_SPEC = process.env.PRESENT_AGENT_INSTALL_SPEC || "present-agent-mcp";
 
 function printSetupUsage() {
   console.log(`Present Agent MCP

@@ -1,0 +1,49 @@
+{
+  "name": "present-agent-mcp",
+  "version": "0.1.0",
+  "description": "Public MCP server for Present Agent — find 5 explainable, personalized gift recommendations from any MCP client (Claude Code, Codex, and more). Hosted: no local catalog, Shopify, or model keys required.",
+  "license": "MIT",
+  "author": "Present Agent (presentagent.vip)",
+  "homepage": "https://presentagent.vip/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuillaumeRacine/present-agent-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GuillaumeRacine/present-agent-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "gifts",
+    "gift-recommendations",
+    "present-agent",
+    "claude",
+    "codex",
+    "ai"
+  ],
+  "type": "commonjs",
+  "bin": {
+    "present-agent-mcp": "bin/present-agent-mcp.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "templates/",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node bin/present-agent-mcp.js",
+    "setup:codex": "node bin/present-agent-mcp.js setup codex"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "tsx": "^4.21.0",
+    "zod": "^4.3.6"
+  }
+}

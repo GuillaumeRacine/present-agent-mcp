@@ -2,6 +2,8 @@
 
 > Find **5 explainable, personalized gift recommendations** from inside any MCP client — Claude Code, Codex, Cursor, and more.
 
+Current status and split guidance: [`docs/STATUS.md`](docs/STATUS.md).
+
 Present Agent is a gifting engine that reasons about the **relationship, occasion, and the signal a gift sends** — not just product search. This package is the **public, hosted** MCP server: it calls the live Present Agent API at [presentagent.vip](https://presentagent.vip), so you need **no local product catalog, no Shopify credentials, and no model-provider API keys** to get value.
 
 - 🎁 5 curated picks, each with a plain-language reason it fits
